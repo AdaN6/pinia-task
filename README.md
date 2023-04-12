@@ -15,3 +15,5 @@ npm install
 ````
 npm install pinia
 ````
+- usage of pinia
+use pinia create a store can keep track of any Global state for the application 
