@@ -7,8 +7,8 @@
             placeholder="New Task"
             v-model="newTask"
         >
+        <button>Add</button>
     </form>
-    <button>Add</button>
 </template>
 
 <script>
