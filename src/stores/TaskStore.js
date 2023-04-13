@@ -7,6 +7,7 @@ export const useTaskStore = defineStore('taskStore', {
         tasks: [
             {id: 1, title: "buy some milk", isFav: false},
             {id: 2, title: "play Gloomhaven", isFav: true},
+            {id: 3, title: "buy cheese", isFav: true},
         ],
         name: 'Ada'
     }),
@@ -17,7 +18,7 @@ export const useTaskStore = defineStore('taskStore', {
         favCount() {
             return this.tasks.reduce((prev, current)=> {
                 return current.isFav ? prev + 1 : prev
-            })
+            }, 0)
         },
         totalCount: (state) => {
             return state.tasks.length

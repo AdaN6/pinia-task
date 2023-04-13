@@ -17,14 +17,14 @@
 
     <!-- Task List -->
     <div class="task-list" v-if="filter === 'all'">
-      <p>all task</p>
+      <p>You have {{ taskStore.totalCount }} tasks left to do</p>
       <div v-for="task in taskStore.tasks" :key="task.id">
         <TaskDetails :task="task"/>
       </div>
     </div>
 
     <div class="task-list" v-if="filter === 'favs'">
-      <p>favourite task</p>
+      <p>You have {{ taskStore.favCount }} favourite tasks left to do</p>
       <div v-for="task in taskStore.favs">
         <TaskDetails :task="task"/>
       </div>
