@@ -35,9 +35,14 @@ npx json-server --watch data/db.json
 
 getters function
 
-
 # extra
 - install Vue.js devtools extension on browswer
+
+# storeToRefs from Pinia
+
+This hook does is get all of the different State properties and Getters from a store and it creates refs out of those
+
+** Cannot get actions and store them as refs using storeToRefs, only can use store itself
 
 # short form for vue boilerplate 
 (install vue vscode Snippets)
