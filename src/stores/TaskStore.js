@@ -49,10 +49,19 @@ export const useTaskStore = defineStore('taskStore', {
                     console.log(res.error)
                 }
         },
-        deleteTask(id) {
+        async deleteTask(id) {
             this.tasks = this.tasks.filter(task => {
                 return task.id !== id
             })
+
+            const res = await fetch('http://localhost:3000/tasks/' + id, 
+                {
+                    method: 'DELETE',
+                })
+
+                if (res.error) {
+                    console.log(res.error)
+                }
         },
         toggleFav(id) {
             const task = this.tasks.find(task => task.id === id)
