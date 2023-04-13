@@ -23,4 +23,9 @@ use pinia create a store can keep track of any Global state for the application
 getters function
 
 # short form for vue boilerplate 
+(install vue vscode Snippets)
 vbase-ns
+
+# extra
+
+- install Vue.js devtools extension on browswer
