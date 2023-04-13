@@ -10,10 +10,19 @@
 
     <!-- Task List -->
     <div class="task-list">
+      <p>all task</p>
       <div v-for="task in taskStore.tasks" :key="task.id">
         <TaskDetails :task="task"/>
       </div>
     </div>
+
+    <div class="task-list">
+      <p>favourite task</p>
+      <div v-for="task in taskStore.favs">
+        <TaskDetails :task="task"/>
+      </div>
+    </div>
+
   </main>
 </template>
 
