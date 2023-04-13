@@ -63,7 +63,9 @@
       </div>
     </div>
 
-    <button @click="taskStore.$reset">reset state</button>
+    <div class="filter">
+      <button @click="taskStore.$reset">reset state</button>
+    </div>
 
   </main>
 </template>
